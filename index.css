@@ -25,6 +25,13 @@ button {
   padding: 10px 20px;
   border: none;
   font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:active {
+  color: var(--lead-green);
+  background-color: white;
 }
 
 ul {
@@ -39,4 +46,14 @@ li {
 
 a {
   color: var(--lead-green);
+}
+
+#delete-btn {
+  background: white;
+  color: var(--lead-green);
+}
+
+#delete-btn:active {
+  background: var(--lead-green);
+  color: white;
 }
