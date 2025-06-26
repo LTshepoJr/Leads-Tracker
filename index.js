@@ -5,13 +5,13 @@ const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
-  inputEl.value = "";
   renderLeads();
+  inputEl.value = "";
 });
 
 function renderLeads() {
   let listItems = "";
-  for (let i = 0; i < myLeads.length; i++) {
+  for (const i in myLeads) {
     listItems += `
       <li>
         <a target="_blank" href="${myLeads[i]}"> ${myLeads[i]} </a>
